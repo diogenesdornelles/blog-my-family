@@ -1,0 +1,257 @@
+.cabecalho {
+  width: 100vw;
+  position: fixed;
+  background-color: black;
+  box-shadow:
+    2.4px 2.7px 2.2px rgba(0, 0, 0, 0.048),
+    5.7px 6.5px 5.3px rgba(0, 0, 0, 0.069),
+    10.8px 12.3px 10px rgba(0, 0, 0, 0.085),
+    19.2px 21.9px 17.9px rgba(0, 0, 0, 0.101),
+    35.9px 40.9px 33.4px rgba(0, 0, 0, 0.122),
+    86px 98px 80px rgba(0, 0, 0, 0.17);
+  z-index: 1;
+}
+
+@media screen and (max-width: 500px) {
+  .cabecalho {
+    height: 2%;
+  }
+}
+
+/*Menu desktop*/
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+
+.menu a {
+  display: block;
+  text-decoration: none;
+  color: bisque;
+  padding: 10px 30px 10px 30px;
+  transition: all .6s ease-in-out;
+}
+
+.menu a:hover {
+  background-color: #444;
+  padding: 10px 40px 10px 40px;
+}
+
+.home {
+  width: 100vw;
+  height: 100vh;
+}
+
+@media screen and (max-width: 500px) {
+  .menu {
+    display: none;
+  }
+}
+
+/*Menu mobile*/
+
+.menu-hamburger {
+  display: none;
+  list-style: none;
+}
+
+@media screen and (max-width: 500px) {
+  
+  .menu-hamburger {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.lbl-menu {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  
+  .lbl-menu {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    left: 5%;
+    width: 30px;
+    height: 30px;
+    background-color: aliceblue;
+    border-radius: 50%;
+  }
+}
+
+.img-hamburger-menu {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .img-hamburger-menu{
+    display: block;
+  }
+}
+
+.menu-hamburger li {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.534);
+  
+}
+
+.menu-hamburger a {
+  display: none;
+  transition: all .8s;
+  text-decoration: none;
+  color: aliceblue;
+  padding: 5px 0 5px 0;
+}
+
+@media screen and (max-width: 500px) {
+  
+  #input-checkbox {
+    display: block;
+  }
+}
+
+#input-checkbox {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+.img-hamburger-menu {
+  width: 110%;
+  height: 110%;
+}
+
+#input-checkbox:checked ~ .menu-hamburger a {
+  display: block;
+  left: 0;
+  top: 40px;
+}
+
+/*Background*/
+
+.home .home-background {
+  width: 80%;
+  height: 85%;
+  background-image: url(images/familia.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  -webkit-animation: kenburns-top 10s ease-out 2s forwards;
+  animation: kenburns-top 6s ease-out 2s forwards;
+  margin: 0 auto;
+  opacity: .3;
+  padding-top: 45px;
+  z-index: 0;
+}
+
+@media screen and (max-width: 500px) {
+  .home .home-background {
+    background-image: url(images/familia-2.jpg);
+  }
+  
+}
+
+@-webkit-keyframes kenburns-top {
+0% {
+-webkit-transform: scale(1) translateY(0);
+        transform: scale(1) translateY(0);
+-webkit-transform-origin: 50% 16%;
+        transform-origin: 50% 16%;
+        opacity: .4;
+}
+100% {
+-webkit-transform: scale(1.25) translateY(-15px);
+        transform: scale(1.25) translateY(-15px);
+-webkit-transform-origin: top;
+        transform-origin: top;
+        opacity: .5;
+}
+}
+@keyframes kenburns-top {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 16%;
+            transform-origin: 50% 16%;
+            opacity: .4;
+  }
+  100% {
+    -webkit-transform: scale(1.25) translateY(-15px);
+            transform: scale(1.25) translateY(-15px);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+            opacity: .5;
+  }
+}
+
+/*Mensagem boas-vindas*/
+
+.home-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: absolute;
+  top: 0%;
+  left: 10%;
+  right: 50%;
+  bottom: 50%;
+  text-align: center;
+}
+
+
+.home-message p {
+  width: 100%;
+  height: 20%;
+  font-family: Georgia, serif;
+  font-size: 4em;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: white;
+  opacity: .4;
+  font-weight: 800;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) 4s both;
+	        animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) 4s both;
+}
+
+@media screen and (max-width: 500px) {
+  .home-message p {
+    font-size: 2em;
+    height: 30%;
+  }
+}
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}

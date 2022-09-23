@@ -1,0 +1,196 @@
+
+
+.todos-nos {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg clip-path='url(%26quot%3b%23SvgjsClipPath1039%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%2332325d'%3e%3c/rect%3e%3ccircle r='33.68' cx='835.43' cy='118.3' fill='url(%23SvgjsLinearGradient1040)'%3e%3c/circle%3e%3ccircle r='35.89' cx='419.74' cy='355.9' fill='url(%23SvgjsLinearGradient1041)'%3e%3c/circle%3e%3ccircle r='20.23' cx='842.22' cy='366.44' fill='url(%23SvgjsLinearGradient1042)'%3e%3c/circle%3e%3ccircle r='17.875' cx='647.01' cy='18.72' fill='%2343468b'%3e%3c/circle%3e%3ccircle r='35.11' cx='782.54' cy='257.54' fill='url(%23SvgjsLinearGradient1043)'%3e%3c/circle%3e%3ccircle r='28.275' cx='1216.55' cy='94.6' fill='url(%23SvgjsLinearGradient1044)'%3e%3c/circle%3e%3ccircle r='33.27' cx='884.56' cy='489.75' fill='url(%23SvgjsLinearGradient1045)'%3e%3c/circle%3e%3ccircle r='19.53' cx='424.64' cy='518.14' fill='url(%23SvgjsLinearGradient1046)'%3e%3c/circle%3e%3c/g%3e%3cdefs%3e%3cclipPath id='SvgjsClipPath1039'%3e%3crect width='1440' height='560' x='0' y='0'%3e%3c/rect%3e%3c/clipPath%3e%3clinearGradient x1='768.0699999999999' y1='118.3' x2='902.79' y2='118.3' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1040'%3e%3cstop stop-color='%23f29b7c' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%237e6286' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='347.96000000000004' y1='355.9' x2='491.52000000000004' y2='355.9' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1041'%3e%3cstop stop-color='%2332325d' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23424488' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='801.76' y1='366.44' x2='882.68' y2='366.44' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1042'%3e%3cstop stop-color='%23ab3c51' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%234f4484' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='712.3199999999999' y1='257.54' x2='852.76' y2='257.54' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1043'%3e%3cstop stop-color='%23ab3c51' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%234f4484' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='1160' y1='94.6' x2='1273.1' y2='94.6' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1044'%3e%3cstop stop-color='%23f29b7c' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%237e6286' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='818.02' y1='489.75' x2='951.1' y2='489.75' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1045'%3e%3cstop stop-color='%2384b6e0' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23464a8f' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='385.58' y1='518.14' x2='463.7' y2='518.14' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1046'%3e%3cstop stop-color='%2332325d' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23424488' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+  background-size: cover;
+}
+
+.todos-nos .grid-todos-nos {
+  width: 80%;
+  height: 85%;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  display: grid;
+  grid-template-columns: 13vh 20vw;
+  grid-template-rows: repeat(5, 13vh);
+  gap: 5px;
+  align-content: center;
+  justify-content: center;
+  grid-template-areas: 
+  "p pd pd"
+  "m md md"
+  "o od od"
+  "j jd jd"
+  "d dd dd";
+}
+
+@media screen and (max-width: 450px) {
+.todos-nos .grid-todos-nos {
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 10vh 30vw;
+  grid-template-rows: repeat(5, 10vh);
+}
+}
+
+.member {
+background-color: #6785bb;
+opacity: .5;
+border-radius: 5px;
+transition: all .6s ease-in-out;
+
+}
+
+.member:hover {
+transform: scale(1.5) translate(-30%);
+opacity: 1;
+box-shadow:
+    2.4px 2.7px 2.2px rgba(0, 0, 0, 0.048),
+    5.7px 6.5px 5.3px rgba(0, 0, 0, 0.069),
+    10.8px 12.3px 10px rgba(0, 0, 0, 0.085),
+    19.2px 21.9px 17.9px rgba(0, 0, 0, 0.101),
+    35.9px 40.9px 33.4px rgba(0, 0, 0, 0.122),
+    86px 98px 80px rgba(0, 0, 0, 0.17);
+z-index: 2;
+}
+
+@media screen and (max-width: 500px) {
+  .member:hover {
+    transform: scale(1.2);
+  }
+  
+}
+
+.descricao {
+border-radius: 5px;
+opacity: 0;
+transition: all .6s ease-in-out;
+transition-delay: .6s;
+width: 100%;
+}
+
+.member:hover + .descricao {
+opacity: 1;
+transform: scale(1.5) translate(15%);
+}
+
+@media screen and (max-width: 500px) {
+  .member:hover + .descricao {
+    transform: scale(1.05) translate(2%);
+  }
+}
+
+.dados-pessoa {
+display: flex;
+margin-left: 5px;
+flex-direction: column;
+gap: 3px;
+align-content: center;
+text-align: center;
+padding: 6px;
+font-size: 14px;
+border-radius: 7px;
+border: 1px solid #cb887f;
+opacity: .7;
+box-shadow:
+    2.4px 2.7px 2.2px rgba(0, 0, 0, 0.048),
+    5.7px 6.5px 5.3px rgba(0, 0, 0, 0.069),
+    10.8px 12.3px 10px rgba(0, 0, 0, 0.085),
+    19.2px 21.9px 17.9px rgba(0, 0, 0, 0.101),
+    35.9px 40.9px 33.4px rgba(0, 0, 0, 0.122),
+    86px 98px 80px rgba(0, 0, 0, 0.17);
+
+}
+
+.member:hover + .descricao > .dados-pessoa h4 {
+-webkit-animation: tracking-in-expand 1.2s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1.2s both;
+animation: tracking-in-expand 1.2s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1.2s both;
+}
+
+.member:hover + .descricao > .dados-pessoa p {
+-webkit-animation: tracking-in-expand 1.2s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1.2s both;
+animation: tracking-in-expand 1.2s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1.2s both;
+}
+
+@-webkit-keyframes tracking-in-expand {
+0% {
+letter-spacing: -0.5em;
+opacity: 0;
+}
+40% {
+opacity: 0.6;
+}
+100% {
+opacity: 1;
+}
+}
+@keyframes tracking-in-expand {
+0% {
+letter-spacing: -0.5em;
+opacity: 0;
+}
+40% {
+opacity: 0.6;
+}
+100% {
+opacity: 1;
+}
+}
+
+.foto {
+width: 100%;
+height: 100%;
+border-radius: 7px;
+}
+
+.papai {
+grid-area: p;
+}
+
+.papai-descricao {
+grid-area: pd;
+}
+
+.papai {
+grid-area: p;
+}
+
+.papai-descricao {
+grid-area: pd;
+}
+
+.mamae {
+grid-area: m;
+}
+
+.mamae-descricao {
+grid-area: md;
+}
+
+.otavio {
+grid-area: o;
+}
+
+.otavio-descricao {
+grid-area: od;
+}
+
+.joana {
+grid-area: j;
+}
+
+.joana-descricao {
+grid-area: jd;
+}
+
+.max {
+grid-area: d;
+}
+
+.max-descricao {
+grid-area: dd;
+}

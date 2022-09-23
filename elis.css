@@ -1,0 +1,259 @@
+.elis {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  background-image: url(images/lavender-bg.jpg);
+  background-blend-mode:soft-light;
+  background-position: center;
+  background-size: cover;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+  opacity: .35;
+  transition: all 3s linear;
+
+}
+
+.elis:hover {
+  opacity: .7;
+}
+
+.foto {
+  display: flex;
+  grid-column-start: 2;
+  grid-column-end: 8;
+  grid-row-start: 1;
+  grid-row-end: -1;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background: rgba(194, 187, 242, 0);
+  
+}
+
+.elis:hover .foto {
+  background: rgba(194, 187, 242, 0.52);
+}
+
+@media screen and (max-width: 800px) {
+  .foto {
+    grid-column-start: 2;
+    grid-column-end: 12;
+    grid-row-start: 4;
+    grid-row-end: 18;
+    justify-content: flex-start;
+    padding-left: 5px;
+
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .foto {
+    grid-column-start: 2;
+    grid-column-end: 12;
+    grid-row-start: 4;
+    grid-row-end: 18;
+
+  }
+}
+
+.foto img {
+  
+  display: none;
+  width: 50%;
+  height: auto;
+  opacity: 1;
+}
+
+
+.elis:hover .foto img {
+  -webkit-animation: slit-in-vertical 0.45s ease-out both;
+	animation: slit-in-vertical 0.45s ease-out both;
+  display: block;
+}
+
+
+@-webkit-keyframes slit-in-vertical {
+  0% {
+    -webkit-transform: translateZ(-800px) rotateY(90deg);
+            transform: translateZ(-800px) rotateY(90deg);
+    opacity: 0;
+  }
+  54% {
+    -webkit-transform: translateZ(-160px) rotateY(87deg);
+            transform: translateZ(-160px) rotateY(87deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateZ(0) rotateY(0);
+            transform: translateZ(0) rotateY(0);
+  }
+}
+@keyframes slit-in-vertical {
+  0% {
+    -webkit-transform: translateZ(-800px) rotateY(90deg);
+            transform: translateZ(-800px) rotateY(90deg);
+    opacity: 0;
+  }
+  54% {
+    -webkit-transform: translateZ(-160px) rotateY(87deg);
+            transform: translateZ(-160px) rotateY(87deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateZ(0) rotateY(0);
+            transform: translateZ(0) rotateY(0);
+  }
+}
+
+
+
+.menu-side {
+  justify-self: self-end;
+  width: 100%;
+  height: 100%;
+  grid-column-start: 19;
+  grid-column-end: 20;
+  grid-row-start: 6;
+  grid-row-end: 17;
+  
+}
+
+@media screen and (max-width: 500px) {
+  .menu-side {
+    grid-column-start: 20;
+    grid-column-end: 20;
+  grid-row-start: 6;
+  grid-row-end: 17;
+
+  }
+}
+
+.elis:hover .menu-side {
+  display: block;
+  -webkit-animation: tilt-in-fwd-tr 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: tilt-in-fwd-tr 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  
+  
+}
+
+@-webkit-keyframes tilt-in-fwd-tr {
+  0% {
+    -webkit-transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
+            transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+            transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+    opacity: 1;
+  }
+}
+@keyframes tilt-in-fwd-tr {
+  0% {
+    -webkit-transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
+            transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+            transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+    opacity: 1;
+  }
+}
+
+.menu-side ul {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.menu-side ul li {
+  text-align: center;
+  transition: all .8s linear;
+}
+
+.menu-side ul li:hover {
+  transform: scale(1.2);
+}
+
+.menu-side img {
+  max-width: 50px;
+  min-width: 20px;
+  opacity: 1;
+}
+
+.sanfona {
+  width: 100%;
+  height: 100%;
+  grid-column-start: 8;
+  grid-column-end: 18;
+  grid-row-start: 1;
+  grid-row-end: -1;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  opacity: 0;
+  transition: all .8s linear;
+}
+
+.elis:hover .sanfona {
+  opacity: 1;
+}
+
+.aba {
+  transition: all 1s cubic-bezier(0.96, 0.52, 0.71, 1.15);
+  border-left: 2px solid #130f69;
+  position: relative;
+}
+
+.aba::after {
+  display: block;
+  content: "";
+  position: absolute;
+  background-image: url(images/seta-direita.png);
+  top: 50%;
+  height: 20px; 
+  width: 20px; 
+  
+  
+}
+
+
+.aba-01 {
+  width: 5%;
+  height: 100%;
+  background-color: #bfb8e9;
+}
+
+.aba-02 {
+
+  width: 5%;
+  height: 100%;
+  background-color: #AAA3D9;
+}
+
+.aba-03 {
+
+  width: 5%;
+  height: 100%;
+  background-color: #5754a5;
+}
+
+.aba-04 {
+
+  width: 5%;
+  height: 100%;
+  background-color: #2c296b;
+}
+
+.aba:hover {
+  width: 100%;
+  
+}
+
+
+
