@@ -2,7 +2,7 @@
   width: 100vw;
   height: 100vh;
   display: grid;
-  background-image: url(images/lavender-bg.jpg);
+  background-image: url(/images/lavender-bg.jpg);
   background-blend-mode:soft-light;
   background-position: center;
   background-size: cover;
@@ -10,7 +10,6 @@
   grid-template-rows: repeat(20, 1fr);
   opacity: .35;
   transition: all 3s linear;
-
 }
 
 .elis:hover {
@@ -53,7 +52,6 @@
     grid-column-end: 12;
     grid-row-start: 4;
     grid-row-end: 18;
-
   }
 }
 
@@ -63,6 +61,7 @@
   width: 50%;
   height: auto;
   opacity: 1;
+  border-radius: 10px;
 }
 
 
@@ -123,8 +122,8 @@
   .menu-side {
     grid-column-start: 20;
     grid-column-end: 20;
-  grid-row-start: 6;
-  grid-row-end: 17;
+    grid-row-start: 6;
+    grid-row-end: 17;
 
   }
 }
@@ -195,6 +194,7 @@
   grid-row-end: -1;
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
   list-style: none;
   opacity: 0;
   transition: all .8s linear;

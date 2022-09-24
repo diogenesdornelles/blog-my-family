@@ -139,16 +139,17 @@
 .home .home-background {
   width: 80%;
   height: 85%;
-  background-image: url(images/familia.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
   -webkit-animation: kenburns-top 10s ease-out 2s forwards;
   animation: kenburns-top 6s ease-out 2s forwards;
   margin: 0 auto;
   opacity: .3;
   padding-top: 45px;
   z-index: 0;
+}
+
+.home .home-background img {
+  width: 100%;
+  height: auto;
 }
 
 @media screen and (max-width: 500px) {

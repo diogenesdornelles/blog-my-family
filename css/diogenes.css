@@ -2,7 +2,7 @@
   width: 100vw;
   height: 100vh;
   display: grid;
-  background-image: url(images/layered-waves-haikei-1.svg);
+  background-image: url(/images/layered-waves-haikei-1.svg);
   background-position: center;
   background-size: cover;
   grid-template-columns: repeat(20, 1fr);
@@ -13,35 +13,35 @@
 
 @keyframes waves {
   0% {
-    background-image: url(images/layered-waves-haikei-1.svg);
+    background-image: url(/images/layered-waves-haikei-1.svg);
 
   }
   12.5% {
-    background-image: url(images/layered-waves-haikei-2.svg);
+    background-image: url(/images/layered-waves-haikei-2.svg);
   }
 
   25% {
-    background-image: url(images/layered-waves-haikei-3.svg);
+    background-image: url(/images/layered-waves-haikei-3.svg);
   }
 
   37.5% {
-    background-image: url(images/layered-waves-haikei-4.svg);
+    background-image: url(/images/layered-waves-haikei-4.svg);
   }
 
   50% {
-    background-image: url(images/layered-waves-haikei-5.svg);
+    background-image: url(/images/layered-waves-haikei-5.svg);
   }
   62.5% {
-    background-image: url(images/layered-waves-haikei-6.svg);
+    background-image: url(/images/layered-waves-haikei-6.svg);
   }
   75% {
-    background-image: url(images/layered-waves-haikei-7.svg);
+    background-image: url(/images/layered-waves-haikei-7.svg);
   }
   87.5% {
-    background-image: url(images/layered-waves-haikei-8.svg);
+    background-image: url(/images/layered-waves-haikei-8.svg);
   }
   100% {
-    background-image: url(images/layered-waves-haikei-9.svg);
+    background-image: url(/images/layered-waves-haikei-9.svg);
   }
 
 }
